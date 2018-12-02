@@ -45,11 +45,11 @@ var onComplete = function() {
                     entry.title = questions[0].answer;
                     console.log(questions[2].answer);
                     switch(questions[2].answer) {
-                        case 'Me gustaria recibir novedades esporadicamente':
+                        case 'Me gustaría recibir novedades esporádicamente':
                             //Nombre, gracias por confiar en *Kol Accesorios*. Constantemente nos ingresa mercadería, no dejes de agendarnos, así podemos comentarle lo mas relevante todas las semanas.
                             entry.content = 'https://api.whatsapp.com/send?phone=549'+questions[1].answer+'&text='+questions[0].answer+',%20gracias%20por%20confiar%20en%20*Kol%20Accesorios*.%20Constantemente%20nos%20ingresa%20mercadería,%20no%20dejes%20de%20agendarnos,%20así%20podemos%20comentarle%20lo%20mas%20relevante%20todas%20las%20semanas.?&source=&data=';
                             break;
-                        case 'Quiero una funda personalizada !!':
+                        case 'Quiero mi funda personalizada!!':
                             //Nombre, gracias por confiar en *Kol Accesorios*. Nos encantaría poder hacer tú funda con la imagen que más te guste. Por favor compartinos la foto por este medio y el modelo de celular.
                             entry.content = 'https://api.whatsapp.com/send?phone=549'+questions[1].answer+'&text='+questions[0].answer+',%20gracias%20por%20confiar%20en%20*Kol%20Accesorios*.%20Nos%20encantaría%20poder%20hacer%20tú%20funda%20con%20la%20imagen%20que%20más%20te%20guste.%20Por%20favor%20compartinos%20la%20foto%20por%20este%20medio%20y%20el%20modelo%20de%20celular.%20?&source=&data=';
                             break;
@@ -123,10 +123,10 @@ var onComplete = function() {
             document.getElementById("inputContainer").appendChild(y);
 
             var a = document.createElement("OPTION");
-            a.setAttribute("value", "Me gustaria recibir novedades esporadicamente");
+            a.setAttribute("value", "Me gustaría recibir novedades esporádicamente");
             document.getElementById("opciones").appendChild(a);
             var b = document.createElement("OPTION");
-            b.setAttribute("value", "Quiero una funda personalizada !!");
+            b.setAttribute("value", "Quiero mi funda personalizada!!");
             document.getElementById("opciones").appendChild(b);
             var c = document.createElement("OPTION");
             c.setAttribute("value", "Estoy buscando un producto puntual");
