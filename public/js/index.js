@@ -24,9 +24,7 @@ var config = {
 
 var questions = [
   {question:"¿Cual es su nombre?"},
-  {question:"Numero de Telefono (Ejemplo: 3425123123)", type: "number"},
-  {question:"¿Como podemos ayudarlo?", list: "opciones", type:''}
-  ]
+  {question:"Numero de Telefono (Ejemplo: 3425123123)", type: "number"}  ]
 
 /*
   do something after the questions have been answered
